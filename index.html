@@ -1,134 +1,67 @@
 <!DOCTYPE html>
 <html lang="it">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Curriculum</title>
-        <link rel="stylesheet" href="stili.css">
-    </head>
-
+    <meta name="description" content="Linee guida per creare componenti accessibili.">
+    <title>Linee Guida Componenti Accessibili</title>
+    <link rel="stylesheet" href="stili.css">
+</head>
 <body>
-  <a href="#main" id="skip" class="skip-to-main-content-link">Vai al contenuto principale</a>
-
-    <!-- nav -->
-
-    <nav id="nav" class="">
-        <div class="menu-container">
-            <span class="accento">Valerio Ceccarelli / Home</span>
-            <ul class="menu">
-                <li class="active"><a href="index.html" aria-current="page"> Home </a></li>
-                <li class=""><a href="chisono.html"> Chi sono </a></li>
-                <li class=""><a href="portfolio.html"> Portfolio </a></li>
-            </ul>
+    <header class="site-header">
+        <div class="container">
+            <h1>Linee Guida per Componenti Accessibili</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#introduzione">Introduzione</a></li>
+                    <li><a href="#componenti">Componenti</a></li>
+                    <li><a href="#risorse">Risorse</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="logo">
-            <img src="./assets/images/logo.svg" alt="">
-        </div>
-    </nav>
+    </header>
 
-    <!-- #main -->
+    <main class="site-content">
+        <section id="introduzione" class="section">
+            <div class="container">
+                <h2>Introduzione</h2>
+                <p>Benvenuto nelle linee guida per creare componenti accessibili. Qui troverai informazioni e best practices per progettare interfacce inclusive e usabili.</p>
+            </div>
+        </section>
 
-    <main id="main" class="container">
-        <header class="hero">
-            <h1>👋 <span class="underline">Ciao! Io sono Valerio.</h1>
-            <p class="descrizione">Sono uno UX Designer romano specializzato in accessibilità.</p>
-        </header>
-        <section id="servizi" class="">
-            <header>
-                <h2 class="underline">Cosa posso fare per te?</h2>
-                <p> Che tu sia un’azienda affermata, una startup, un privato, uno studente o un’associazione non-profit,
-                    contattami senza impegno!<br>
-                    Ecco qui elencate tutte le opportunità di collaborazione che potremmo avere:
-                </p>
-            </header>
-            <div class="elenco-card">
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/user-experience.png" alt="">
-                        <h3 class="underline"> UX/UI Design</h3>
-                    </header>
-                    <p>Progetto l'esperienza utente del tuo prodotto digitale e realizzo un prototipo hi-fi.</p>
+        <section id="componenti" class="section">
+            <div class="container">
+                <h2>Componenti</h2>
+                <article class="component">
+                    <h3>Bottoni</h3>
+                    <p>I bottoni devono avere un contrasto sufficiente e un testo chiaro. Usa l'attributo <code>aria-label</code> per migliorare l'accessibilità.</p>
                 </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/tutor-it.png" alt="">
-                        <h3 class="underline"> Tutor Informatica</h3>
-                    </header>
-                    <p>Hai bisogno di una mano per superare una verifica o un esame? Ti aiuto io!</p>
+                <article class="component">
+                    <h3>Modali</h3>
+                    <p>Le finestre modali devono essere focalizzabili e chiudibili tramite tastiera (<code>Esc</code>).</p>
                 </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/accessibility.png" alt="">
-                        <h3 class="underline"> Accessibilità</h3>
-                    </header>
-                    <p>Valuto l’accessibilità del tuo prodotto digitale e ti aiuto a migliorala.</p>
-                </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/consulenza.png" alt="">
-                        <h3 class="underline"> Consulenza</h3>
-                    </header>
-                    <p>Supporto durante le fasi embrionali di un sito web, di un’app o di una web app.</p>
-                </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/web-design.png" alt="">
-                        <h3 class="underline"> Web Design</h3>
-                    </header>
-                    <p>Realizzo il tuo sito web, il tuo e-commerce o la tua landing page con Wordpress.</p>
-                </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/front-end.png" alt="">
-                        <h3 class="underline"> Frontend Redesign</h3>
-                    </header>
-                    <p>Rinnovo il tuo sito-vetrina tramite codice, facendoti risparmiare sul costo.</p>
-                </article>
-                <article class="card-lavoro">
-                    <header class="d-flex flex-column">
-                        <img src="./assets/images/logo-design.png" alt="">
-                        <h3 class="underline"> Logo Design</h3>
-                    </header>
-                    <p>Hai bisogno di un nuovo logo per il tuo brand? Contattami e lo realizzo io per te!</p>
-                </article>
-                <article class="card-lavoro">
-                    <header class="">
-                        <img src="./assets/images/pro-bono.png" alt="">
-                        <h3 class="underline"> Pro Bono</h3>
-                    </header>
-                    <p>Organizzazione non-profit o onlus? Facciamo squadra per aiutare gli altri!</p>
+                <article class="component">
+                    <h3>Form</h3>
+                    <p>Assicurati che ogni campo abbia un'etichetta associata e un messaggio di errore chiaro.</p>
                 </article>
             </div>
         </section>
 
+        <section id="risorse" class="section">
+            <div class="container">
+                <h2>Risorse</h2>
+                <ul>
+                    <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C Web Accessibility Initiative</a></li>
+                    <li><a href="https://designers.italia.it/" target="_blank" rel="noopener">Designers Italia</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <!-- #footer -->
-
-    <footer class="my-footer container">
-        <h2 class="underline"> Mettiamoci in contatto!</h2>
-        <h3>Sei di Roma?</h3>
-        <p> Prendiamoci un caffè <small>(o quello che vuoi)</small> e parliamone a voce!</p>
-        <h4> Abiti <small>(molto)</small> fuori dal G.R.A.?</h4>
-        <ul class="contatti">
-            <li class="contatto">
-                <img src="./assets/images/email.png" alt="">
-                <a href="mailto:vceccarelli96@gmail.com" target="_blank">Contattami via email</a>
-            </li>
-            <li class="contatto">
-                <img src="./assets/images/linkedin.png" alt="">
-                <a href="https://www.linkedin.com/in/valerioceccarelli96" target="_blank">Scrivimi su LinkedIn</a>
-            </li>
-            <li class="contatto">
-                <img src="./assets/images/instagram.png" alt="">
-                <a href="https://www.instagram.com/monospace.valer" target="_blank">Seguimi su Instagram</a>
-            </li>
-        </ul>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Linee Guida Accessibilità. Tutti i diritti riservati.</p>
         </div>
-        <hr>
-        <p class="crediti"> <span class="copy">©</span> Valerio Ceccarelli 2023 - Tutti i diritti riservati</p>
     </footer>
 </body>
-</html>
-
 </html>

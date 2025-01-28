@@ -1,17 +1,87 @@
+/* Stile base per il sito */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
-  }
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-  }
-  footer {
-    margin-top: 2em;
-    color: #777;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stile header */
+.site-header {
+  background-color: #004080;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Stile sezioni */
+.section {
+  padding: 2rem 0;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.component h3 {
+  font-size: 1.2rem;
+  color: #0056b3;
+}
+
+.component p {
+  margin: 0.5rem 0;
+}
+
+/* Stile footer */
+.site-footer {
+  background-color: #00264d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
