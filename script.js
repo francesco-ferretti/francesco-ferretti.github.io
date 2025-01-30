@@ -74,3 +74,47 @@ document.addEventListener("DOMContentLoaded", function() {
     getParolaDelGiorno();
     startCountdown();
 });
+// Funzione per memorizzare la parola del giorno con la data
+function salvaParolaDelGiorno(parola) {
+    const oggi = new Date();
+    const dataStringa = oggi.toISOString().split('T')[0]; // Formatta la data in formato YYYY-MM-DD
+    const archivio = JSON.parse(localStorage.getItem("archivioParole")) || [];
+    
+    archivio.push({ data: dataStringa, parola: parola.parola, descrizione: parola.descrizione });
+    localStorage.setItem("archivioParole", JSON.stringify(archivio));
+}
+
+// Funzione per visualizzare l'archivio delle parole
+function mostraArchivio() {
+    const archivio = JSON.parse(localStorage.getItem("archivioParole")) || [];
+    const archivioDiv = document.getElementById("archivio");
+    
+    archivioDiv.innerHTML = ''; // Pulisce l'archivio esistente
+    archivio.forEach(entry => {
+        const div = document.createElement("div");
+        div.classList.add("archivio-entry");
+        div.innerHTML = `<strong>${entry.data}</strong>: <em>${entry.parola}</em> - ${entry.descrizione}`;
+        archivioDiv.appendChild(div);
+    });
+}
+
+// Modifica la funzione getParolaDelGiorno per salvare la parola nel localStorage
+function getParolaDelGiorno() {
+    const oggi = new Date();
+    const giornoDellAnno = oggi.getDay();
+    const parola = paroleDelGiorno[giornoDellAnno % paroleDelGiorno.length];
+
+    // Inserisce la parola e la descrizione nel DOM
+    document.getElementById("parola").textContent = parola.parola;
+    document.getElementById("descrizione").textContent = parola.descrizione;
+
+    // Salva la parola nel localStorage
+    salvaParolaDelGiorno(parola);
+}
+
+// Esegui la funzione al caricamento del documento
+document.addEventListener("DOMContentLoaded", function() {
+    getParolaDelGiorno();
+    startCountdown();
+    mostraArchivio(); // Mostra l'archivio al caricamento della pagina
+});
