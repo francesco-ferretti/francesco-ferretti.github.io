@@ -1,8 +1,39 @@
 // Array di parole e descrizioni
 const paroleDelGiorno = [
     { parola: "Serendipità", descrizione: "La capacità di fare scoperte fortunate per puro caso." },
-    { parola: "Epifania", descrizione: "Una manifestazione improvvisa di una verità fondamentale." },
     { parola: "Inesauribile", descrizione: "Che non può essere esaurito." },
+    { parola: "Iperbole", descrizione: "Figura retorica che consiste nell’esagerare una qualità o un fatto." },
+    { parola: "Sublime", descrizione: "Ciò che suscita ammirazione o meraviglia per la sua grande bellezza o perfezione." },
+    { parola: "Pusillanime", descrizione: "Persona che manca di coraggio, timorosa o codarda." },
+    { parola: "Melancolia", descrizione: "Stato d’animo di tristezza profonda e indefinita." },
+    { parola: "Fulgido", descrizione: "Che brilla con luce intensa, splendente." },
+    { parola: "Recondito", descrizione: "Nascosto, misterioso." },
+    { parola: "Allegoria", descrizione: "Figura retorica che usa una narrazione simbolica per rappresentare un concetto astratto." },
+    { parola: "Empireo", descrizione: "In filosofia antica, il cielo più alto e puro, dove risiedono gli dei." },
+    { parola: "Ineluttabile", descrizione: "Che non può essere evitato, inevitabile." },
+    { parola: "Venustà", descrizione: "Bellezza che risplende in modo raffinato." },
+    { parola: "Evanescente", descrizione: "Che scompare progressivamente, che sfuma senza lasciare traccia." },
+    { parola: "Alacrità", descrizione: "Prontezza nel rispondere o nell’agire." },
+    { parola: "Perniciosa", descrizione: "Dannosa, pericolosa, in grado di causare danni gravi." },
+    { parola: "Caduco", descrizione: "Che è destinato a perire, effimero." },
+    { parola: "Dulcinea", descrizione: "Nome ideale, romantico, che richiama il concetto di amore perfetto." },
+    { parola: "Cenotafio", descrizione: "Monumento funebre eretto in memoria di una persona defunta, ma senza il corpo." },
+    { parola: "Ineffabile", descrizione: "Che non può essere descritto a parole, indescrivibile." },
+    { parola: "Arcanum", descrizione: "Mistero profondo, segreto." },
+    { parola: "Serafico", descrizione: "Relativo agli angeli serafini, puro e angelico." },
+    { parola: "Luculento", descrizione: "Ricco, abbondante, opulento." },
+    { parola: "Nefando", descrizione: "Che è talmente vile o riprovevole da essere indicibile." },
+    { parola: "Dionisiaco", descrizione: "Relativo al dio Dionisio, che simboleggia l’ebrezza e l’entusiasmo." },
+    { parola: "Eudemonia", descrizione: "Felicità o benessere, spesso inteso come stato di vita virtuosa." },
+    { parola: "Fulgore", descrizione: "Luminosa intensità di luce, splendore." },
+    { parola: "Ambrosia", descrizione: "Cibo o bevanda che, secondo la mitologia, dava immortalità agli dèi." },
+
+
+
+
+
+
+
     // Aggiungi altre parole qui...
 ];
 
