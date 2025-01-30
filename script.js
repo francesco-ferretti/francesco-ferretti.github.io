@@ -28,12 +28,6 @@ const paroleDelGiorno = [
     { parola: "Fulgore", descrizione: "Luminosa intensità di luce, splendore." },
     { parola: "Ambrosia", descrizione: "Cibo o bevanda che, secondo la mitologia, dava immortalità agli dèi." },
 
-
-
-
-
-
-
     // Aggiungi altre parole qui...
 ];
 
@@ -53,3 +47,30 @@ function getParolaDelGiorno() {
 
 // Esegui la funzione quando il documento è pronto
 document.addEventListener("DOMContentLoaded", getParolaDelGiorno);
+// Funzione per ottenere il countdown fino al prossimo giorno
+function startCountdown() {
+    const oggi = new Date();
+    const prossimoGiorno = new Date(oggi);
+    prossimoGiorno.setDate(oggi.getDate() + 1); // Imposta la data al giorno successivo
+
+    const intervallo = setInterval(function() {
+        const oraAttuale = new Date();
+        const differenza = prossimoGiorno - oraAttuale;
+
+        if (differenza <= 0) {
+            clearInterval(intervallo);
+            document.getElementById("countdown").textContent = "La nuova parola è pronta!";
+        } else {
+            const ore = Math.floor(differenza / (1000 * 60 * 60));
+            const minuti = Math.floor((differenza % (1000 * 60 * 60)) / (1000 * 60));
+            const secondi = Math.floor((differenza % (1000 * 60)) / 1000);
+            document.getElementById("countdown").textContent = `Prossima parola in: ${ore}h ${minuti}m ${secondi}s`;
+        }
+    }, 1000);
+}
+
+// Esegui la funzione al caricamento del documento
+document.addEventListener("DOMContentLoaded", function() {
+    getParolaDelGiorno();
+    startCountdown();
+});
