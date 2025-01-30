@@ -3,10 +3,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  font-family: 'Georgia', serif;
+  background: #8800C7;
   text-align: center;
   margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -17,13 +17,13 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
-  color: #333;
+  font-size: 5rem;
+  color: #8800C7;
   margin: 0;
 }
 
 p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 2rem;
+  color: #8800C7;
   margin-top: 10px;
 }
