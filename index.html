@@ -3,65 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Linee guida per creare componenti accessibili.">
-    <title>Linee Guida Componenti Accessibili</title>
-    <link rel="stylesheet" href="stili.css">
+    <title>La Parola del Giorno</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            font-family: 'Georgia', serif;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1>Linee Guida per Componenti Accessibili</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#introduzione">Introduzione</a></li>
-                    <li><a href="#componenti">Componenti</a></li>
-                    <li><a href="#risorse">Risorse</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="site-content">
-        <section id="introduzione" class="section">
-            <div class="container">
-                <h2>Introduzione</h2>
-                <p>Ti do il benvenuto nelle linee guida per creare componenti accessibili. Qui troverai informazioni e best practices per progettare interfacce inclusive e usabili.</p>
-            </div>
-        </section>
-
-        <section id="componenti" class="section">
-            <div class="container">
-                <h2>Componenti</h2>
-                <article class="component">
-                    <h3>Bottoni</h3>
-                    <p>I bottoni devono avere un contrasto sufficiente e un testo chiaro. Usa l'attributo <code>aria-label</code> per migliorare l'accessibilità.</p>
-                </article>
-                <article class="component">
-                    <h3>Modali</h3>
-                    <p>Le finestre modali devono essere focalizzabili e chiudibili tramite tastiera (<code>Esc</code>).</p>
-                </article>
-                <article class="component">
-                    <h3>Form</h3>
-                    <p>Assicurati che ogni campo abbia un'etichetta associata e un messaggio di errore chiaro.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="risorse" class="section">
-            <div class="container">
-                <h2>Risorse</h2>
-                <ul>
-                    <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" target="_blank" rel="noopener">W3C patterns <span class="sr-only"> apre in una nuova scheda</span></a></li>
-                    <li><a href="https://italia.github.io/bootstrap-italia/docs/componenti/accordion//" target="_blank" rel="noopener">Componenti Designers Italia<span class="sr-only"> apre in una nuova scheda</span></a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Francesco Ferretti. Tutti i diritti riservati.</p>
-        </div>
-    </footer>
+    <div class="container">
+        <h1>Serendipità</h1>
+        <p>La capacità di fare scoperte fortunate per puro caso.</p>
+    </div>
 </body>
 </html>
