@@ -14,6 +14,8 @@ body {
   background: white;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Aggiunto per una maggiore flessibilità */
+  max-width: 600px; /* Limita la larghezza su schermi grandi */
 }
 
 h1 {
@@ -26,4 +28,30 @@ p {
   font-size: 2rem;
   color: #8800C7;
   margin-top: 10px;
+}
+/* Media query per dispositivi con larghezza massima di 768px (tablet e mobile) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Riduce la dimensione del titolo sui dispositivi mobili */
+  }
+
+  p {
+    font-size: 1.5rem; /* Riduce la dimensione del testo sul mobile */
+  }
+
+  .container {
+    width: 90%; /* Maggiore spazio per il contenitore */
+    padding: 15px; /* Diminuisce il padding per ottimizzare lo spazio */
+  }
+}
+
+/* Media query per dispositivi con larghezza massima di 480px (mobile) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem; /* Riduce ulteriormente la dimensione del titolo sui dispositivi piccoli */
+  }
+
+  p {
+    font-size: 1.2rem; /* Riduce ulteriormente la dimensione del testo sul mobile */
+  }
 }
