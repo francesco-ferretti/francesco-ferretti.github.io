@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Parola del Giorno</title>
+    <title>LPdG by Frank</title>
     <link rel="stylesheet" href="stili.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Serendipità</h1>
-        <p>La capacità di fare scoperte fortunate per puro caso.</p>
-    </div>
+  <div class="container">
+    <header>
+      <h1>LPdG by Frank</h1>
+    </header>
+
+    <nav>
+      <button onclick="changeWord('Serendipità')">4 Febbraio 2025</button>
+      <button onclick="changeWord('Creatività')">3 Febbraio 2025</button>
+      <button onclick="changeWord('Passione')">2 Febbraio 2025</button>
+      <button onclick="changeWord('Speranza')">1 Febbraio 2025</button>
+      <button onclick="changeWord('Serendipità')">31 Gennaio 2025</button>
+    </nav>
+
+    <main class="content-section">
+      <h2 id="word-title">Serendipità</h2>
+      <p>La capacità di fare scoperte fortunate per puro caso.</p>
+      <a href="#">Serendipity – Quando l’amore è magia (2001)</a>
+      <a href="#">Serendipity</a>
+      <a href="#">Serendipities: Language and Lunacy (Italian Academy Lectures)</a>
+      <a href="#">Pasteur: “Il caso favorisce le menti preparate”</a>
+    </main>
+
+    <footer>
+      <p>@2025 La Parola del Giorno, un'idea di Frank</p>
+      <a href="#">Fai una donazione</a>
+    </footer>
   </div>
-    <div>
-      <p id="countdown"></p>
-  </div>
-    
 </body>
 </html>

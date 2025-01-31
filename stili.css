@@ -1,88 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
 body {
+  background-color: var(--bg-color, #8A2BE2);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #8800C7;
-  text-align: center;
-  margin: 0;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .container {
+  max-width: 900px;
   padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 80%; /* Aggiunto per una maggiore flessibilità */
-  max-width: 600px; /* Limita la larghezza su schermi grandi */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 h1 {
-  font-size: 5rem;
-  color: #8800C7;
-  margin: 0;
-  margin-bottom: 20px;
+  font-size: 2.5em;
 }
 
 p {
-  font-size: 2rem;
-  color: #8800C7;
-  margin-top: 10px;
-}
-/* Media query per dispositivi con larghezza massima di 768px (tablet e mobile) */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem; /* Riduce la dimensione del titolo sui dispositivi mobili */
-  }
-
-  p {
-    font-size: 1.5rem; /* Riduce la dimensione del testo sul mobile */
-  }
-
-  .container {
-    width: 90%; /* Maggiore spazio per il contenitore */
-    padding: 15px; /* Diminuisce il padding per ottimizzare lo spazio */
-  }
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-/* Media query per dispositivi con larghezza massima di 480px (mobile) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem; /* Riduce ulteriormente la dimensione del titolo sui dispositivi piccoli */
-  }
-
-  p {
-    font-size: 1.2rem; /* Riduce ulteriormente la dimensione del testo sul mobile */
-  }
-}
-#countdown {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-top: 20px;
-  font-weight: bold;
+nav {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-#archivio {
-  margin-top: 30px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.archivio-entry {
-  background-color: #f7f7f7;
+nav button {
+  background-color: white;
+  color: #8A2BE2;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 15px;
-  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.archivio-entry strong {
-  color: #8800C7; /* Colore per la data */
+nav button:hover {
+  background-color: #ddd;
 }
 
-.archivio-entry em {
-  font-style: italic;
-  color: #333;
+.content-section {
+  margin-top: 20px;
+}
+
+.content-section a {
+  color: white;
+  text-decoration: underline;
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
 }
