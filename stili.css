@@ -7,7 +7,7 @@
 
 body {
   background: linear-gradient(243deg, #C17AE2 8.51%, #8800C7 30.01%, #420061 70.49%);
-  display: inline-flex;
+  display: flex;
 padding: 30px 44px 33px 40px;
 align-items: center;
 }
@@ -17,7 +17,7 @@ align-items: center;
 width: 1356px;
 flex-direction: column;
 align-items: flex-start;
-gap: -174px;
+gap: 20px;
 }
 
 header {
@@ -59,7 +59,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 10px;
-align-self: stretch;
 }
 
 p {
@@ -69,8 +68,8 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  display: flex;
-width: 188px;
+  display: block;
+  max-width: 188px;
 padding: 10px;
 flex-direction: column;
 align-items: flex-start;
@@ -163,10 +162,9 @@ text-decoration-skip-ink: auto;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
-display: flex;
-width: 188px;
+display: inline-block;
+max-width: 188px;
 padding: 10px;
-flex-direction: column;
 align-items: flex-start;
 gap: 10px;
 }
