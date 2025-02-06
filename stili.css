@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--bg-color, #8A2BE2);
+  background: linear-gradient(243deg, #C17AE2 8.51%, #8800C7 30.01%, #420061 70.49%);
   color: white;
   display: flex;
   justify-content: center;
@@ -30,16 +30,47 @@ h1 {
   font-size: 2.5em;
 }
 
+h2 {
+  color: #FFF;
+font-family: Lexend;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+align-self: stretch;
+}
+
+.des {
+  color: #FFF;
+font-family: Lexend;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+align-self: stretch;
+}
+
 p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+width: 188px;
+padding: 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
 }
 
 nav {
-  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+width: 146px;
+flex-direction: column;
+align-items: flex-start;
+gap: 22px;
 }
 
 nav button {
@@ -57,10 +88,23 @@ nav button:hover {
   background-color: #ddd;
 }
 
-.content-section {
-  margin-top: 20px;
+.parolades {
+  display: flex;
+  width: 595px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 17px;
 }
 
+.content-section {
+  display: flex;
+width: 773px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 100px;
+}
 .content-section a {
   color: white;
   text-decoration: underline;
@@ -68,6 +112,15 @@ nav button:hover {
   margin: 10px 0;
   font-size: 1.1em;
 }
+
+ul {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -87,4 +140,8 @@ footer {
 footer a {
   color: white;
   text-decoration: underline;
+  display: flex;
+width: 1356px;
+justify-content: space-between;
+align-items: flex-end;
 }
